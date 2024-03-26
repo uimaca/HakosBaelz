@@ -20,18 +20,30 @@
     <link rel="stylesheet" href="./style/style.css" />
 
     <style>
-      /* .bcg-img {
-        background-image: url(./img/bcgImg1.jpg);
-      } */
+      .avatar-box {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: auto;
+      }
+
+      .card {
+        height: 250px;
+      }
     </style>
   </head>
   <body>
     <div class="bcg-img"></div>
 
-    <nav class="navbar navbar-expand-lg my-md-4">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./img/LOGO-1.png" alt="Bootstrap" width="auto" height="60"
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./img/LOGO-1.png"
+            alt="Hakos Baelz"
+            width="auto"
+            height="60"
         /></a>
         <button
           class="navbar-toggler"
@@ -45,7 +57,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 fw-bolder">
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"
                 >基本資料</a
@@ -79,225 +91,213 @@
     </nav>
 
     <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="item mt-1 mx-md-5 mb-3 row justify-content-around">
-            <!-- 左側基本資料 -->
-            <div class="col-12 col-md-3 mt-3 align-self-center">
-              <table
-                class="table text-center align-middle table-bordered border-black"
-                style="--bs-table-bg: none"
+      <div class="row main">
+        <!-- 左側基本資料 -->
+        <div class="col-12 col-lg-3 mt-3 align-self-center">
+          <table
+            class="table text-center align-middle table-bordered border-black"
+            style="--bs-table-bg: none"
+          >
+            <thead>
+              <tr>
+                <th colspan="3">
+                  <div class="avatar-box">
+                    <img src="./img/headimg.jpg" alt="headimg" class="w-100" />
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th scope="col" colspan="3">
+                  Hakos Baelz （ハコス・ベールズ）
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">生日</th>
+                <td colspan="2">2/29</td>
+              </tr>
+              <tr>
+                <th scope="row">身高</th>
+                <td colspan="2">149cm（7.45個起司輪高）</td>
+              </tr>
+              <tr>
+                <th scope="row">年齡</th>
+                <td colspan="2">隨機</td>
+              </tr>
+              <tr>
+                <th scope="row" rowspan="5">標籤</th>
+                <td>LIVE</td>
+                <td>#TeleBAE</td>
+              </tr>
+              <tr>
+                <td>MUSIC</td>
+                <td>#BaeBeatz</td>
+              </tr>
+              <tr>
+                <td>FANART</td>
+                <td>#BaelzBrush</td>
+              </tr>
+              <tr>
+                <td>MEME</td>
+                <td>#YABAE</td>
+              </tr>
+              <tr>
+                <td>FAN-NAME</td>
+                <td>#baerats (brats)</td>
+              </tr>
+              <tr>
+                <th scope="row" rowspan="3">形象</th>
+                <td>形象設計</td>
+                <td>Mika Pikazo（@MikaPikaZo）</td>
+              </tr>
+              <tr>
+                <td>live 2D</td>
+                <td>Jujube（@MegaJujube）</td>
+              </tr>
+              <tr>
+                <td>3D建模</td>
+                <td>uron（@uron86）</td>
+              </tr>
+              <tr>
+                <td scope="col" colspan="3">
+                  <a
+                    href="https://twitter.com/hakosbaelz?lang=zh-Hant"
+                    target="_blank"
+                    ><i class="fa-brands fa-twitter fs-3 text-black"></i
+                  ></a>
+                  <a
+                    href="https://www.youtube.com/@HakosBaelz/community"
+                    target="_blank"
+                    class="offset-4"
+                    ><i class="fa-brands fa-youtube fs-3 text-black"></i
+                  ></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 右側資訊 -->
+        <div class="col-12 col-lg-7">
+          <div id="morInfo" class="carousel slide">
+            <!-- 分頁按鈕 -->
+            <div class="d-flex justify-content-center my-5">
+              <a
+                type="button"
+                data-bs-target="#morInfo"
+                data-bs-slide-to="0"
+                class="btn btn-outline-danger change-active active"
+                aria-current="true"
+                aria-label="Slide 1"
+                >介紹</a
               >
-                <thead>
-                  <tr>
-                    <th colspan="3">
-                      <div class="headimg-box overflow-hidden mx-auto">
-                        <img
-                          src="./img/headimg.jpg"
-                          alt="headimg"
-                          class="w-100"
-                        />
-                      </div>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th scope="col" colspan="3">
-                      Hakos Baelz （ハコス・ベールズ）
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">生日</th>
-                    <td colspan="2">2/29</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">身高</th>
-                    <td colspan="2">149cm（7.45個起司輪高）</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">年齡</th>
-                    <td colspan="2">隨機</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" rowspan="5">標籤</th>
-                    <td>LIVE</td>
-                    <td>#TeleBAE</td>
-                  </tr>
-                  <tr>
-                    <td>MUSIC</td>
-                    <td>#BaeBeatz</td>
-                  </tr>
-                  <tr>
-                    <td>FANART</td>
-                    <td>#BaelzBrush</td>
-                  </tr>
-                  <tr>
-                    <td>MEME</td>
-                    <td>#YABAE</td>
-                  </tr>
-                  <tr>
-                    <td>FAN-NAME</td>
-                    <td>#baerats (brats)</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" rowspan="3">形象</th>
-                    <td>形象設計</td>
-                    <td>Mika Pikazo（@MikaPikaZo）</td>
-                  </tr>
-                  <tr>
-                    <td>live 2D</td>
-                    <td>Jujube（@MegaJujube）</td>
-                  </tr>
-                  <tr>
-                    <td>3D建模</td>
-                    <td>uron（@uron86）</td>
-                  </tr>
-                  <tr>
-                    <td scope="col" colspan="3">
-                      <a
-                        href="https://twitter.com/hakosbaelz?lang=zh-Hant"
-                        target="_blank"
-                        ><i class="fa-brands fa-twitter fs-3 text-black"></i
-                      ></a>
-                      <a
-                        href="https://www.youtube.com/@HakosBaelz/community"
-                        target="_blank"
-                        class="offset-4"
-                        ><i class="fa-brands fa-youtube fs-3 text-black"></i
-                      ></a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <a
+                type="button"
+                data-bs-target="#morInfo"
+                data-bs-slide-to="1"
+                class="btn btn-outline-danger offset-2 change-active"
+                aria-label="Slide 2"
+                >外觀</a
+              >
             </div>
 
-            <!-- 右側資訊 -->
-            <div class="col-12 col-md-7">
-              <div id="morInfo" class="carousel slide">
-                <!-- 分頁按鈕 -->
-                <div class="d-flex justify-content-center my-5">
-                  <a
-                    type="button"
-                    data-bs-target="#morInfo"
-                    data-bs-slide-to="0"
-                    class="btn btn-outline-danger change-active active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                    >介紹</a
-                  >
-                  <a
-                    type="button"
-                    data-bs-target="#morInfo"
-                    data-bs-slide-to="1"
-                    class="btn btn-outline-danger offset-2 change-active"
-                    aria-label="Slide 2"
-                    >外觀</a
-                  >
+            <!-- 分頁內容 -->
+            <div class="carousel-inner py-5">
+              <!-- 介紹 -->
+              <div class="carousel-item active">
+                <div class="d-block w-100">
+                  <h5 class="text-center">
+                    "WAZZUP!! 這是屬於你的全球老鼠偶像—Hakos Baelz！"
+                  </h5>
+                  <p class="mt-5">
+                    　　渾沌、混亂、豪無秩序……全都化身為這隻可愛的小老鼠。身為一個表演者，她持續尋找著她的下一個舞臺。有時候，她也會被自己所掀起的風爆襲捲，但這也不失為一種樂趣！
+                  </p>
+                  <p>
+                    　　她是「議會」的一員，藉由世界所誕生的概念「混沌（Chaos）」本身。同時，她也是被諸神們所任命的議會會長。雖說基本上是採行放任主義，包含她自身在內沒有任何人認同任命一事，但既然被任命也只好順從。雖說有著老鼠的外觀但不能因此小看她，因為老鼠便是「渾沌（Chaos）」的前兆。
+                  </p>
+                  <p>
+                    　　「Chaos」就是渾沌、運氣同時也與自由有著本質上的相似。有著天真浪漫的笑容，不被萬物所束縛的她常常恣意妄為。對她而言，世界不能單靠規矩運作，因此將世界的常規打破。在一旁看著混亂不加以干涉，便是對她而言最大的愉悅。
+                  </p>
                 </div>
+              </div>
+              <!-- 外觀 -->
+              <div class="carousel-item">
+                <div class="d-block">
+                  <h5 class="text-center">外觀</h5>
 
-                <!-- 分頁內容 -->
-                <div class="carousel-inner py-5">
-                  <!-- 介紹 -->
-                  <div class="carousel-item active">
-                    <div class="d-block w-100">
-                      <h5 class="text-center">
-                        "WAZZUP!! 這是屬於你的全球老鼠偶像—Hakos Baelz！"
-                      </h5>
-                      <p class="mt-5">
-                        　　渾沌、混亂、豪無秩序……全都化身為這隻可愛的小老鼠。身為一個表演者，她持續尋找著她的下一個舞臺。有時候，她也會被自己所掀起的風爆襲捲，但這也不失為一種樂趣！
-                      </p>
-                      <p>
-                        　　她是「議會」的一員，藉由世界所誕生的概念「混沌（Chaos）」本身。同時，她也是被諸神們所任命的議會會長。雖說基本上是採行放任主義，包含她自身在內沒有任何人認同任命一事，但既然被任命也只好順從。雖說有著老鼠的外觀但不能因此小看她，因為老鼠便是「渾沌（Chaos）」的前兆。
-                      </p>
-                      <p>
-                        　　「Chaos」就是渾沌、運氣同時也與自由有著本質上的相似。有著天真浪漫的笑容，不被萬物所束縛的她常常恣意妄為。對她而言，世界不能單靠規矩運作，因此將世界的常規打破。在一旁看著混亂不加以干涉，便是對她而言最大的愉悅。
-                      </p>
+                  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+                    <div class="col">
+                      <div class="card">
+                        <div class="mx-auto overflow-hidden w-100">
+                          <img
+                            src="./img/outfit/normal02.png"
+                            class="card-img-top"
+                            alt="初始服裝"
+                          />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center">初始服裝</h5>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <!-- 外觀 -->
-                  <div class="carousel-item">
-                    <div class="d-block">
-                      <h5 class="text-center">外觀</h5>
 
-                      <div
-                        class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4"
-                      >
-                        <div class="col">
-                          <div class="card card-height">
-                            <div class="mx-auto overflow-hidden w-100">
-                              <img
-                                src="./img/outfit/normal02.png"
-                                class="card-img-top w-100"
-                                alt="初始服裝"
-                              />
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title text-center">初始服裝</h5>
-                            </div>
-                          </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="mx-auto overflow-hidden w-100">
+                          <img
+                            src="./img/outfit/normal01.png"
+                            class="card-img-top"
+                            alt="初始服裝（二）"
+                          />
                         </div>
-
-                        <div class="col">
-                          <div class="card card-height">
-                            <div class="mx-auto overflow-hidden w-100">
-                              <img
-                                src="./img/outfit/normal01.png"
-                                class="card-img-top w-100"
-                                alt="初始服裝（二）"
-                              />
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title text-center">
-                                初始服裝（二）
-                              </h5>
-                            </div>
-                          </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center">初始服裝（二）</h5>
                         </div>
+                      </div>
+                    </div>
 
-                        <div class="col">
-                          <div class="card card-height">
-                            <div class="mx-auto overflow-hidden w-100">
-                              <img
-                                src="./img/outfit/IdolCostume.jpg"
-                                class="card-img-top w-100"
-                                alt="偶像服"
-                              />
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title text-center">偶像服</h5>
-                            </div>
-                          </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="mx-auto overflow-hidden w-100">
+                          <img
+                            src="./img/outfit/IdolCostume.jpg"
+                            class="card-img-top"
+                            alt="偶像服"
+                          />
                         </div>
-
-                        <div class="col">
-                          <div class="card card-height">
-                            <div class="mx-auto overflow-hidden w-100">
-                              <img
-                                src="./img/outfit/traditional.png"
-                                class="card-img-top w-100"
-                                alt="正月服裝"
-                              />
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title text-center">正月服裝</h5>
-                            </div>
-                          </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center">偶像服</h5>
                         </div>
+                      </div>
+                    </div>
 
-                        <div class="col">
-                          <div class="card card-height">
-                            <div class="mx-auto overflow-hidden w-100">
-                              <img
-                                src="./img/outfit/casual.png"
-                                class="card-img-top w-100"
-                                alt="休閒服"
-                              />
-                            </div>
-                            <div class="card-body">
-                              <h5 class="card-title text-center">休閒服</h5>
-                            </div>
-                          </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="mx-auto overflow-hidden w-100">
+                          <img
+                            src="./img/outfit/traditional.png"
+                            class="card-img-top"
+                            alt="正月服裝"
+                          />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center">正月服裝</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card">
+                        <div class="mx-auto overflow-hidden w-100">
+                          <img
+                            src="./img/outfit/casual.png"
+                            class="card-img-top"
+                            alt="休閒服"
+                          />
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title text-center">休閒服</h5>
                         </div>
                       </div>
                     </div>
